@@ -4,7 +4,8 @@ Release:    1%{?dist}
 Summary:    Icons and pictures
 
 Group:      	System Environment/Base
-URL:        	https://github.com/ProjectStill/StillRPMs
+URL:        	https://github.com/ProjectStill/stillos-logos
+Source0:    	https://github.com/ProjectStill/stillos-logos/archive/refs/heads/%{branch}.tar.gz#/stillos-logos-%{branch}.tar.gz
 License:    	GPLv2 and LGPLv2+
 BuildArch:  	noarch
 
@@ -41,6 +42,8 @@ BuildArch: noarch
 The stillos-logos-httpd package contains image files which can be used by
 httpd.
 
+%prep
+%autosetup -n stillos-logos-%{branch}
 %build
 make
 
