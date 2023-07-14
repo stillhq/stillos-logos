@@ -1,3 +1,5 @@
+%global branch fragile
+
 Name:       stillos-logos
 Version:    38
 Release:    1%{?dist}
