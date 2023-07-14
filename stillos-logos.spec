@@ -4,7 +4,7 @@ Release:    1%{?dist}
 Summary:    Icons and pictures
 
 Group:      	System Environment/Base
-URL:        	https://github.com/ProjectStill/StillRPMs
+URL:        	https://github.com/ProjectStill/stillos-logos
 License:    	GPLv2 and LGPLv2+
 BuildArch:  	noarch
 

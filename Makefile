@@ -1,4 +1,4 @@
-NAME = risios-logos
+NAME = stillos-logos
 XML = backgrounds/desktop-backgrounds-fedora.xml
 
 all: bootloader/fedora.icns
