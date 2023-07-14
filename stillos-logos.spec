@@ -67,11 +67,6 @@ for i in pixmaps/* ; do
   install -p -m 644 $i %{buildroot}%{_datadir}/pixmaps
 done
 
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/plymouth/themes/charge/
-for i in plymouth/charge/* ; do
-    install -p -m 644 $i $RPM_BUILD_ROOT%{_datadir}/plymouth/themes/charge/
-done
-
 # File or directory names do not count as trademark infringement
 mkdir -p %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/
 mkdir -p %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/
@@ -86,8 +81,8 @@ install	-p -m 644 icons/hicolor/symbolic/apps/* %{buildroot}%{_datadir}/icons/hi
 # The Plymoth spinner theme Fedora logo bits
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/plymouth/themes/spinner
 install -p -m 644 pixmaps/fedora-gdm-logo.png $RPM_BUILD_ROOT%{_datadir}/plymouth/themes/spinner/watermark.png
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/plymouth/themes/risi-spinner
-install -p -m 644 pixmaps/fedora-gdm-logo.png $RPM_BUILD_ROOT%{_datadir}/plymouth/themes/risi-spinner/watermark.png
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/plymouth/themes/still-spinner
+install -p -m 644 pixmaps/fedora-gdm-logo.png $RPM_BUILD_ROOT%{_datadir}/plymouth/themes/still-spinner/watermark.png
 
 # save some dup'd icons
 hardlink -v %{buildroot}/
@@ -124,9 +119,8 @@ rm -rf %{buildroot}
 %{_datadir}/anaconda/pixmaps/*
 %{_datadir}/icons/hicolor/*/apps/*
 %{_datadir}/pixmaps/*
-%{_datadir}/plymouth/themes/charge/*
 %{_datadir}/plymouth/themes/spinner/watermark.png
-%{_datadir}/plymouth/themes/risi-spinner/watermark.png
+%{_datadir}/plymouth/themes/still-spinner/watermark.png
 %exclude %{_datadir}/pixmaps/poweredby.png
 
 %files httpd
