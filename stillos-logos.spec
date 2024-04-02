@@ -1,7 +1,7 @@
 %global branch fragile
 
 Name:       stillos-logos
-Version:    39
+Version:    40
 Release:    2%{?dist}
 Summary:    Icons and pictures
 
