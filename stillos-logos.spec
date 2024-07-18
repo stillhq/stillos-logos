@@ -2,7 +2,7 @@
 
 Name:       stillos-logos
 Version:    40
-Release:    2%{?dist}
+Release:    3%{?dist}
 Summary:    Icons and pictures
 
 Group:      	System Environment/Base
